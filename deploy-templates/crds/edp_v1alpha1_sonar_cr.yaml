@@ -3,7 +3,8 @@ kind: Sonar
 metadata:
   name: example-sonar
 spec:
-  version: "7.6-community"
+  image: "sonarqube"
+  version: "7.9-community"
   edpSpec:
     dnsWildcard: core-platform.aws.main.edp.projects.epam.com
   volumes:

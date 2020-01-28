@@ -1,4 +1,5 @@
 # Vendors
+tools.go
 vendor/
 Gopkg.lock
 # Temporary Build Files
