@@ -29,6 +29,16 @@ spec:
           type: object
         spec:
           properties:
+            image:
+              description: 'INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
+                Important: Run "operator-sdk generate k8s" to regenerate code after
+                modifying this file Add custom validation using kubebuilder tags:
+                https://book.kubebuilder.io/beyond_basics/generating_crd.html'
+              type: string
+            edpSpec:
+              dnsWildcard:
+                type: string
+          type: object
             externalConfiguration:
               properties:
                 adminUser:
@@ -40,9 +50,9 @@ spec:
                     name:
                       type: string
                   required:
-                  - name
-                  - kind
-                  - description
+                    - name
+                    - kind
+                    - description
                   type: object
                 ciUser:
                   properties:
@@ -53,9 +63,9 @@ spec:
                     name:
                       type: string
                   required:
-                  - name
-                  - kind
-                  - description
+                    - name
+                    - kind
+                    - description
                   type: object
                 isCredentials:
                   properties:
@@ -66,9 +76,9 @@ spec:
                     name:
                       type: string
                   required:
-                  - name
-                  - kind
-                  - description
+                    - name
+                    - kind
+                    - description
                   type: object
                 readUser:
                   properties:
@@ -79,9 +89,9 @@ spec:
                     name:
                       type: string
                   required:
-                  - name
-                  - kind
-                  - description
+                    - name
+                    - kind
+                    - description
                   type: object
               type: object
             version:
@@ -94,17 +104,19 @@ spec:
                   name:
                     type: string
                 required:
-                - name
-                - capacity
+                  - name
+                  - capacity
                 type: object
               type: array
           required:
-          - version
+            - image
+            - version
+            - edpSpec
           type: object
         status:
           type: object
   version: v1alpha1
   versions:
-  - name: v1alpha1
-    served: true
-    storage: true
+    - name: v1alpha1
+      served: true
+      storage: true
