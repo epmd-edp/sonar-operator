@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e0d14205_523294d2",
+        "filename": "deploy-templates/crds/edp_v1alpha1_sonar_crd.yaml",
+        "patchSetId": 9
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2020-02-11T14:15:54Z",
+      "side": 1,
+      "message": "In types we have \nEdpSpec EdpSpec        `json:\"edpSpec, omitempty\"`\nplease check whether it can be empty or not",
+      "range": {
+        "startLine": 116,
+        "startChar": 12,
+        "endLine": 116,
+        "endChar": 21
+      },
+      "revId": "260c4294c49b1ea917da263238ea1540a7151ff5",
+      "serverId": "0350cb7f-c1b1-4710-a647-f6632dbafb3c",
+      "unresolved": false
+    }
+  ]
+}
