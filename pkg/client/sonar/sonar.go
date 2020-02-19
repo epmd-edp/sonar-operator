@@ -38,6 +38,8 @@ func (sc *SonarClient) ChangePassword(user string, oldPassword string, newPasswo
 		SetHeader("Content-Type", "application/x-www-form-urlencoded").
 		Post("/users/change_password")
 
+
+
 	if err != nil {
 		return errorsf.Wrap(err, "Failed to send request for password change in Sonar!")
 	}
