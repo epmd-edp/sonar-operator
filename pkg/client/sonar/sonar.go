@@ -34,9 +34,12 @@ func (sc *SonarClient) ChangePassword(user string, oldPassword string, newPasswo
 	}
 
 	resp, err = sc.resty.R().
-		SetBody(fmt.Sprintf("login=%v&password=%v&previousPassword=%v", user, newPassword, oldPassword)).
+		SetBody(fmt.Sprintf("in=%v&pad=%v&prevrd=%v", user, newPassword, oldPassword)).
 		SetHeader("Content-Type", "application/x-www-form-urlencoded").
 		Post("/users/change_password")
+
+
+
 
 	if err != nil {
 		return errorsf.Wrap(err, "Failed to send request for password change in Sonar!")
