@@ -1,0 +1,7 @@
+Verified+1: CI Jenkins
+Code-Review+2: Alexander Morozov <alexander_morozov@epam.com>
+Submitted-by: Serhii Shydlovskyi <serhii_shydlovskyi@epam.com>
+Submitted-at: Wed, 15 Apr 2020 14:32:14 +0000
+Reviewed-on: https://gerrit-oc-green-edp-cicd.delivery.aws.main.edp.projects.epam.com/c/sonar-operator/+/940
+Project: sonar-operator
+Branch: refs/heads/master
