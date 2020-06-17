@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1ed54924_0d34cd34",
+        "filename": "deploy-templates/templates/additional_templates/sonar.yaml",
+        "patchSetId": 4
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1000009
+      },
+      "writtenOn": "2020-06-17T16:22:14Z",
+      "side": 1,
+      "message": "Same as for Nexus. This is a Sonar, so let\u0027s name the directory as such.",
+      "range": {
+        "startLine": 1,
+        "startChar": 21,
+        "endLine": 1,
+        "endChar": 28
+      },
+      "revId": "9ad6f283e93decf53379e8c1f1064271e3ae1926",
+      "serverId": "0350cb7f-c1b1-4710-a647-f6632dbafb3c",
+      "unresolved": true
+    }
+  ]
+}
