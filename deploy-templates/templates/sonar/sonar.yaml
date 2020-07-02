@@ -7,6 +7,7 @@ spec:
   edpSpec:
     dnsWildcard: {{ .Values.sonar.dnsWildCard }}
   type: Sonar
+  initImage: "busybox"
   image: {{.Values.sonar.image}}
   version: {{.Values.sonar.version}}
   volumes:
