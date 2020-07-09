@@ -33,7 +33,7 @@ Full available chart parameters list:
 ```
     - <chart_version>                        # Helm chart version;
     - global.edpName                         # a namespace or a project name (in case of OpenShift);
-    - global.platform                        # "openShift" or "kubernetes";
+    - global.platform                        # a platform type that can be "kubernetes" or "openshift";
     - global.dnsWildCard                     # a cluster DNS wildcard name;
     - image.name                             # EDP jenkins-oprator Docker image name. The released image can be found on https://hub.docker.com/r/epamedp/sonar-operator;
     - image.version                          # EDP sonar-oprator Docker image tag. The released image can be found on https://hub.docker.com/r/epamedp/sonar-operator/tags;
