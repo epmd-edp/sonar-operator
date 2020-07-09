@@ -5,17 +5,17 @@ metadata:
   name: sonar
 spec:
   edpSpec:
-    dnsWildcard: {{ .Values.edp.dnsWildCard }}
+    dnsWildcard: {{ .Values.global.dnsWildCard }}
   type: Sonar
   initImage: {{.Values.sonar.initImage}}
   dbImage: {{.Values.sonar.dbImage}}
   image: {{.Values.sonar.image}}
   version: {{.Values.sonar.version}}
   volumes:
-    - capacity: 1Gi
+    - capacity: {{ .Values.jenkins.dataVolumeCapacity }}
       name: data
-      storage_class: gp2
-    - capacity: 1Gi
+      storage_class: {{ .Values.jenkins.dataVolumeStorageClass }}
+    - capacity: {{ .Values.jenkins.dbVolumeCapacity }}
       name: db
-      storage_class: gp2
+      storage_class: {{ .Values.jenkins.dbVolumeStorageClass }}
 {{end}}
