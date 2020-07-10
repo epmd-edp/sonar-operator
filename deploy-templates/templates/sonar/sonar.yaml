@@ -11,6 +11,8 @@ spec:
   dbImage: {{.Values.sonar.dbImage}}
   image: {{.Values.sonar.image}}
   version: {{.Values.sonar.version}}
+  basePath: {{.Values.sonar.basePath}}
+  imagePullSecrets: {{.Values.sonar.imagePullSecrets}}
   volumes:
     - capacity: {{ .Values.sonar.dataVolumeCapacity }}
       name: data
